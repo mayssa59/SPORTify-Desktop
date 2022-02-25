@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.interfaces.CrudCoursDansCalendrierController">
+   <children>
+      <ImageView fitHeight="451.0" fitWidth="665.0" layoutX="-4.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imgSalleSport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableCours" layoutX="104.0" layoutY="230.0" prefHeight="200.0" prefWidth="474.0">
+        <columns>
+            <TableColumn fx:id="type_cours" prefWidth="164.0" text="Type_Cours" />
+            <TableColumn fx:id="date" prefWidth="146.0" text="Date" />
+            <TableColumn fx:id="heure" prefWidth="163.0" text="Heure" />
+        </columns>
+      </TableView>
+      <Label layoutX="202.0" layoutY="21.0" prefHeight="20.0" prefWidth="167.0" text="Gestion Calendrier" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAjouter" layoutX="140.0" layoutY="195.0" mnemonicParsing="false" onAction="#AjouterCoursDansCalendrier" text="Ajouter" textFill="#09a778" />
+      <Button fx:id="btnModifier" layoutX="273.0" layoutY="195.0" mnemonicParsing="false" onAction="#modifierCoursDansCalendrier" text="Modifier" textFill="#1b53c2" />
+      <Button fx:id="btnSupprimer" layoutX="395.0" layoutY="195.0" mnemonicParsing="false" onAction="#supprimerCoursDansCalendrier" onDragDetected="#supprimerCoursDansCalendrier" text="Supprimer" textFill="#d30000" />
+      <Label layoutX="185.0" layoutY="67.0" text="Type_Cours" />
+      <TextField fx:id="tfTypeCours" layoutX="254.0" layoutY="63.0" />
+      <Label layoutX="79.0" layoutY="106.0" text="Date" />
+      <Label layoutX="334.0" layoutY="106.0" text="Heure" />
+      <TextField fx:id="tfHeure" layoutX="384.0" layoutY="102.0" />
+      <Button fx:id="btnAfficher" layoutX="34.0" layoutY="305.0" mnemonicParsing="false" onAction="#afficherCalendrier" text="Afficher" />
+      <Button fx:id="btnRechercher" layoutX="369.0" layoutY="144.0" mnemonicParsing="false" onAction="#rechercherCoursDansCalendrier" text="Rechercher" />
+      <TextField fx:id="tfRecherche" layoutX="185.0" layoutY="144.0" />
+      <DatePicker fx:id="tfDate" layoutX="115.0" layoutY="102.0" />
+   </children>
+</AnchorPane>

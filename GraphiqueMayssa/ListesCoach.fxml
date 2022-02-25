@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphiqueMayssa.ListesCoachController">
+   <children>
+      <ImageView fx:id="myimageview2" fitHeight="749.0" fitWidth="1041.0" layoutX="-2.0" layoutY="-194.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/asus/Desktop/bleuciel.jpg.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="102.0" layoutY="47.0" prefHeight="25.0" prefWidth="254.0" promptText="Search" />
+      <Button graphicTextGap="6.0" layoutX="241.0" layoutY="452.0" mnemonicParsing="false" onAction="#affecterAction" style="-fx-background-color: #2667e0;" text="Affecter " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="418.0" layoutY="452.0" mnemonicParsing="false" onAction="#modifierAction" style="-fx-background-color: #2667e0;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TableView fx:id="tableCoach" layoutX="70.0" layoutY="181.0" prefHeight="227.0" prefWidth="584.0">
+         <columns>
+          <TableColumn fx:id="surnom_coach" prefWidth="75.0" text="Surnom" />
+            <TableColumn fx:id="nom_coach" prefWidth="75.0" text="Nom " />
+          <TableColumn fx:id="prenom_coach" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="tel_coach" prefWidth="94.0" text="Telephone" />
+            <TableColumn fx:id="mail_coach" prefWidth="168.0" text="Email" />
+            <TableColumn fx:id="evaluation_coach" prefWidth="96.0" text="Evaluation" />
+         </columns>
+      </TableView>
+      <Text fill="#2667e0" layoutX="70.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des coaches" underline="true">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

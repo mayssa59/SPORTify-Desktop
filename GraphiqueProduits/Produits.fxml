@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphiqueProduits.ProduitsController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" style="-fx-radius: 20;">
+               <image>
+                  <Image url="file:/C:/Users/asus/Documents/ESPRIT/Projet%20Integré/Code/SPORTify/src/GraphiqueProduits/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../GraphiqueCours/style.css" text="Gestion de produits" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../GraphiqueCours/style.css" text="Gestion Reclamation">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../GraphiqueCours/style.css" text="Gestion Cours">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../GraphiqueCours/style.css" text="Gestion Salle de Sport">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../GraphiqueCours/style.css" text="Calendrier">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Box_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnProfil" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../GraphiqueCours/style.css" text="Profil">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../GraphiqueCours/style.css" text="Sign Out">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Pane fx:id="pnlCustomer" prefHeight="500.0" prefWidth="736.0">
+               <children>
+                  <TabPane prefHeight="576.0" prefWidth="793.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab onSelectionChanged="#afficherrrr" text="Afficher">
+                           <content>
+                              <AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="673.0">
+                                 <children>
+                                    <TextField fx:id="tf_recherche" layoutX="41.0" layoutY="23.0" onKeyPressed="#rechercherCours" prefHeight="10.0" prefWidth="194.0" promptText="Rechercher" style="-fx-background-radius: 20;" />
+                                    <Button fx:id="btn_trier" layoutX="683.0" layoutY="25.0" minWidth="33.0" mnemonicParsing="false" onAction="#TrierCours" prefHeight="25.0" prefWidth="33.0" />
+                                    <TableView fx:id="ListeProduits" layoutX="19.0" layoutY="64.0" prefHeight="437.0" prefWidth="694.0">
+                                       <columns>
+                                          <TableColumn fx:id="id" prefWidth="133.0" text="id" />
+                                          <TableColumn fx:id="libelle" prefWidth="175.0" text="libelle" />
+                                          <TableColumn fx:id="type" prefWidth="141.0" text="type" />
+                                          <TableColumn fx:id="quantites" prefWidth="141.0" text="quantites" />
+                                          <TableColumn fx:id="prix" prefWidth="103.0" text="prix" />
+                                       </columns>
+                                    </TableView>
+                                    <ImageView fitHeight="19.0" fitWidth="47.0" layoutX="690.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons8-sort-amount-up-32.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="208.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 20;">
+                                       <image>
+                                          <Image url="@../images/icons8-google-web-recherche-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8-afficher-le-panneau-latéral-gauche-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Tab>
+                        <Tab text="Ajouter">
+                           <content>
+                              <AnchorPane fx:id="Ajouter1" minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="673.0">
+                                 <children>
+                                    <AnchorPane id="AnchorPane" layoutX="1.0" layoutY="-6.0" prefHeight="554.0" prefWidth="846.0">
+                                       <children>
+                                          <Rectangle arcHeight="25.0" arcWidth="25.0" fill="DODGERBLUE" height="450.0" layoutX="17.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #C0C0C0;" width="750.0" />
+                                          <AnchorPane id="AnchorPane" layoutY="2.0" prefHeight="551.0" prefWidth="833.0">
+                                             <children>
+                                                <TextField fx:id="tf_quantites" layoutX="498.0" layoutY="151.0" prefHeight="25.0" prefWidth="199.0" promptText="quantites" style="-fx-background-radius: 20;" />
+                                                <TextField fx:id="tf_prix" accessibleText="heure" layoutX="495.0" layoutY="237.0" prefHeight="25.0" prefWidth="204.0" promptText="prix" style="-fx-background-radius: 20;" />
+                                                <TextField fx:id="tf_type" layoutX="58.0" layoutY="319.0" prefHeight="25.0" prefWidth="204.0" promptText="type" style="-fx-background-radius: 20;" />
+                                                <TextField fx:id="tf_id" layoutX="65.0" layoutY="151.0" prefHeight="25.0" prefWidth="190.0" promptText="id" style="-fx-background-radius: 20;" />
+                                                <Label layoutX="151.0" layoutY="113.0" text="id" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="552.0" layoutY="103.0" text="quantites" textFill="#fffbfb">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="141.0" layoutY="197.0" text="libelle" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="576.0" layoutY="207.0" text="prix" textFill="#f5f5f5">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="141.0" layoutY="286.0" text="type" textFill="#fffafa">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="btn_ajouter" layoutX="362.0" layoutY="493.0" mnemonicParsing="false" onAction="#AjouterProduit" prefHeight="33.0" prefWidth="82.0" style="-fx-background-color: #ee8a1e; -fx-background-radius: 20;" text="Ajouter" textFill="#f2efef">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="307.0" layoutY="46.0" prefHeight="17.0" prefWidth="192.0" text="Ajouter Un Produit" textFill="#ee8a1e" underline="true">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="18.0" />
+                                                   </font>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                </Label>
+                                                <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="267.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/icons8-add-property-48.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField fx:id="tf_libelle" layoutX="63.0" layoutY="229.0" prefHeight="25.0" prefWidth="190.0" promptText="libelle" style="-fx-background-radius: 20;" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8-ajouter-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Tab>
+                        <Tab text="Modifier">
+                           <content>
+                              <AnchorPane fx:id="Modifier" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="DODGERBLUE" height="458.0" layoutX="19.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #C0C0C0;" width="756.0" />
+                                    <AnchorPane id="AnchorPane" layoutX="7.0" prefHeight="547.0" prefWidth="783.0">
+                                       <children>
+                                          <TextField fx:id="tf_quantites1" layoutX="514.0" layoutY="159.0" prefHeight="25.0" prefWidth="170.0" promptText="quantites" style="-fx-background-radius: 20;" />
+                                          <TextField fx:id="tf_type1" layoutX="53.0" layoutY="344.0" prefHeight="25.0" prefWidth="189.0" promptText="type" style="-fx-background-radius: 20;" />
+                                          <TextField fx:id="tf_id1" layoutX="52.0" layoutY="159.0" prefHeight="25.0" prefWidth="178.0" promptText="id" style="-fx-background-radius: 20;" />
+                                          <Label layoutX="135.0" layoutY="118.0" text="Id" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="126.0" layoutY="213.0" text="Libelle" textFill="WHITE">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btn_modifier" layoutX="354.0" layoutY="488.0" mnemonicParsing="false" onAction="#ModifierProduit" prefHeight="35.0" prefWidth="75.0" style="-fx-background-radius: 20; -fx-background-color: #ee8a1e;" text="Modifier" textFill="WHITE" />
+                                          <Label layoutX="285.0" layoutY="30.0" prefHeight="17.0" prefWidth="192.0" text="Modifier Un Produit" textFill="#ee8a1e" underline="true">
+                                             <font>
+                                                <Font name="System Bold Italic" size="18.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </Label>
+                                          <ImageView fitHeight="42.0" fitWidth="32.0" layoutX="242.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/refresh.png" />
+                                             </image>
+                                          </ImageView>
+                                          <TextField fx:id="tf_libelle1" layoutX="46.0" layoutY="249.0" prefHeight="25.0" prefWidth="190.0" promptText="libelle" style="-fx-background-radius: 20;" />
+                                          <Label layoutX="125.0" layoutY="300.0" text="Type" textFill="#fffafa">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="576.0" layoutY="120.0" text="quantites" textFill="#fffbfb">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tf_prix1" accessibleText="heure" layoutX="503.0" layoutY="249.0" prefHeight="25.0" prefWidth="204.0" promptText="prix" style="-fx-background-radius: 20;" />
+                                          <Label layoutX="584.0" layoutY="219.0" text="prix" textFill="#f5f5f5">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <TextField fx:id="rechercheee" layoutX="288.0" layoutY="86.0" onMouseMoved="#recherche1" prefHeight="25.0" prefWidth="179.0" promptText="Rechercher" style="-fx-background-radius: 20;" />
+                                    <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="444.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 30;">
+                                       <image>
+                                          <Image url="@../images/icons8-google-web-recherche-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/asus/Documents/ESPRIT/Projet%20Integré/Code/SPORTify/src/images/icons8-mettre-à-jour-l_étiquette-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Tab>
+                        <Tab text="Supprimer">
+                           <content>
+                              <AnchorPane fx:id="Supprimer" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="DODGERBLUE" height="441.0" layoutX="27.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #C0C0C0;" width="726.0" />
+                                    <AnchorPane id="AnchorPane" layoutX="65.0" layoutY="43.0" prefHeight="407.0" prefWidth="664.0">
+                                       <children>
+                                          <Label layoutX="306.0" layoutY="96.0" text="Reference Du Produit" textFill="#fffefe">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btn_supprimer" layoutX="323.0" layoutY="291.0" mnemonicParsing="false" onAction="#SupprimerProduit" prefHeight="33.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-background-color: #ee8a1e;" text="Supprimer" textFill="WHITE" />
+                                          <Label layoutX="272.0" layoutY="43.0" prefHeight="17.0" prefWidth="192.0" text="Supprimer Un Produit" textFill="#ee8a1e" underline="true">
+                                             <font>
+                                                <Font name="System Bold Italic" size="18.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </Label>
+                                          <ComboBox fx:id="CB_Supprimer" layoutX="264.0" layoutY="151.0" prefHeight="25.0" prefWidth="217.0" style="-fx-background-radius: 20;" />
+                                          <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="240.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/delete.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <Pane fx:id="pnlMenus" layoutX="57.0" layoutY="550.0" prefHeight="97.0" prefWidth="200.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="24.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8-symbole-effacer-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Tab>
+                        <Tab onSelectionChanged="#fonctionStat" text="Statistque">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8-market-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <content>
+                              <AnchorPane id="AnchorPane" fx:id="stat" prefHeight="500.0" prefWidth="700.0">
+                                 <children>
+                                    <BorderPane fx:id="pane" layoutX="37.0" layoutY="29.0" prefHeight="389.0" prefWidth="641.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="29.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Pane fx:id="pnlOrders" layoutX="561.0" layoutY="-203.0" prefHeight="144.0" prefWidth="645.0" />
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>

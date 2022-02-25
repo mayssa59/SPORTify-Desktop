@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: EEEEEE; -fx-background-position: 0566C9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphiqueUser.InterfaceIAController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="752.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/asus/Pictures/one.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="168.0" prefHeight="88.0" prefWidth="429.0" text="Inscrivez-vous dans n'importe quel cours&#10;dans n'importe quel salle de sport">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="115.0" prefHeight="53.0" prefWidth="441.0" text="Bienvenue dans SPORTify">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCreeUnCompte" layoutX="43.0" layoutY="257.0" mnemonicParsing="false" onAction="#CreeUnCompte" prefHeight="27.0" prefWidth="162.0" style="-fx-background-color: #4267B2;" text="Crée un compte" textFill="#ffffffe3">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="437.0" prefHeight="63.0" prefWidth="215.0" text="Support : sportify.feelgood@gmail.com&#10;&#10;">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane focusTraversable="true" layoutX="500.0" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: F3F3F3;">
+         <children>
+            <ImageView fitHeight="108.0" fitWidth="125.0" layoutX="132.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/asus/Pictures/Capture%20d’écran%202021-03-09%20221427.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="82.0" layoutY="130.0" prefHeight="51.0" prefWidth="215.0" style="-fx-background-color: E9E9E9E9E9E9;" text="Connectez-vous ">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfPseudo" layoutX="31.0" layoutY="191.0" prefHeight="31.0" prefWidth="339.0" promptText="Pseudonym" />
+            <PasswordField fx:id="tfMdp" layoutX="31.0" layoutY="243.0" prefHeight="31.0" prefWidth="339.0" promptText="Mot de passe" />
+            <Button fx:id="btnSeConnecter" layoutX="32.0" layoutY="315.0" mnemonicParsing="false" onAction="#SeConnecter" prefHeight="39.0" prefWidth="339.0" style="-fx-background-color: #4267B2;" text="Se connecter" textFill="#ffffffe3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMdpOublie" layoutX="118.0" layoutY="439.0" mnemonicParsing="false" onAction="#motDePasseOublie" style="-fx-background-color: F3F3F3;" text="Mot de passe oublié ?" textFill="#0101cd" wrapText="true" />
+            <Label fx:id="tfIncorret" layoutX="30.0" layoutY="284.0" prefHeight="21.0" prefWidth="339.0" textFill="RED" />
+            <Label fx:id="labelCorrect" alignment="CENTER" contentDisplay="RIGHT" layoutX="32.0" layoutY="284.0" prefHeight="21.0" prefWidth="339.0" textFill="#13d71d" />
+            <Label fx:id="labelX" layoutX="370.0" layoutY="-4.0" onMouseClicked="#FermerFenetre" prefHeight="31.0" prefWidth="20.0" text="x">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelMail" alignment="CENTER" layoutX="32.0" layoutY="466.0" prefHeight="21.0" prefWidth="339.0" textAlignment="CENTER" textFill="#44e859">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelMail1" alignment="CENTER" layoutX="30.0" layoutY="466.0" prefHeight="21.0" prefWidth="339.0" textFill="RED" />
+            <Button fx:id="btnFb" layoutX="32.0" layoutY="384.0" mnemonicParsing="false" onAction="#SeConnecterAvecFacebook" prefHeight="31.0" prefWidth="339.0" style="-fx-background-color: #4267B2;" text="  Se connecter avec facebook" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="40.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/asus/Pictures/584ac2d03ac3a570f94a666d.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
